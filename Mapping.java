@@ -8,7 +8,7 @@ public class CF0597C {
     public static void main(String[] args) throws IOException {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st=new StringTokenizer(br.readLine());
-        int N=Integer.parseInt(st.nextToken());int K=Integer.parseInt(st.nextToken());
+        int N=Integer.parseInt(st.nextToken());
         int[] a=new int[N];int[] b=new int[N];
         
         for (int i = 0; i < N; i++) {
