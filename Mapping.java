@@ -1,7 +1,10 @@
 import java.io.*; import java.util.*;
 public class CF0597C {
 
-    
+    //Finds sigma such that
+    //a_i=b_{\sigma(i)} for all i
+    //Where sigma is a permutation of {1,2,...,n}
+    //b is sorted
     public static void main(String[] args) throws IOException {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st=new StringTokenizer(br.readLine());
