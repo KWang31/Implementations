@@ -62,6 +62,11 @@ public static class A{
         if(p[x]==x)return x;
         int ans=find(p[x],x); p[x]=ans; return ans;
     }
+    public static long pow(int x, int p){
+      if(p==0)return 1; if(p==1)return x;
+      long ans=pow(x,p/2);
+      return ((ans*ans)%M*pow(x,p%2))%M;
+    }
     */
 }
 //Debugging:
