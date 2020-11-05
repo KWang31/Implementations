@@ -1,5 +1,5 @@
 import java.io.*; import java.util.*;
-public static class A{
+public class A{
   static class FastReader 
     { 
         BufferedReader br; 
