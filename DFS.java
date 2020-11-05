@@ -1,5 +1,5 @@
 import java.io.*; import java.util.*;
-public class CF1344C {
+public class DFS {
 
     static class FastReader 
     { 
@@ -93,7 +93,7 @@ public class CF1344C {
         cnt=0;
         for (int i = 0; i < N; i++) {
             if(dp1[i]>=i && dp2[i]>=i){
-                sb.append('A'); cnt++; //System.out.println(i+":O");
+                sb.append('A'); cnt++; 
             }else{
                 sb.append('E');
             }
