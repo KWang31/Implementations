@@ -1,9 +1,6 @@
 import java.io.*; import java.util.*;
 public class TreeDiameter {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) throws IOException {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         int N=Integer.parseInt(br.readLine());
