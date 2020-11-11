@@ -60,7 +60,7 @@ public class A{
     }
     public static int find(int x, int[] p){
         if(p[x]==x)return x;
-        int ans=find(p[x],x); p[x]=ans; return ans;
+        int ans=find(p[x],p); p[x]=ans; return ans;
     }
     public static long pow(int x, int p){
       if(p==0)return 1; if(p==1)return x;
