@@ -35,7 +35,7 @@ public class A{
         
     } 
     static int MOD=998244353;
-    
+    static int[] rk, p;
     public static void main(String[] args){
         FastReader br=new FastReader();
         int N=br.nextInt(); int M=br.nextInt();
@@ -66,6 +66,15 @@ public class A{
       if(p==0)return 1; if(p==1)return x;
       long ans=pow(x,p/2);
       return ((ans*ans)%M*pow(x,p%2))%M;
+    }
+    public static void merge(int a, int b) {
+    	if(rk[a]<rk[b]) {
+    		p[a]=b;
+    	}else if(rk[a]==rk[b]) {
+    		p[a]=b; rk[b]++;
+    	}else {
+    		p[b]=a;
+    	}
     }
     */
 }
