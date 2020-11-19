@@ -1,3 +1,4 @@
+//Note: when we copy arrays, avoid = at all costs: use a void instead, see nautilus (BOI19)
 public static long[] shift(long[] a, int c){
         int len=a.length; long[] ans=a.clone();
         
