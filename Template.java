@@ -35,7 +35,7 @@ public class A{
         
     } 
     static int MOD=998244353;
-    static int[] rk, p;
+    static int[] rk, p,siz;
     public static void main(String[] args){
         FastReader br=new FastReader();
         int N=br.nextInt(); int M=br.nextInt();
@@ -43,40 +43,22 @@ public class A{
         //StringBuilder sb=new StringBuilder();
         //System.out.println(sb.toString());
     }
-    /*
-    Some functions:
-     public static void dfs(ArrayList<Integer>[] arl, int cur){//We can use DP here too
-       
-        for (int i : arl[cur]) {
-            
-            if(!vis[i]){
-               
-                vis[i]=true;
-                dfs(arl,i);
-            }
-            
-        }
-        
-    }
+    
     public static int find(int x, int[] p){
         if(p[x]==x)return x;
         int ans=find(p[x],p); p[x]=ans; return ans;
     }
-    public static long pow(int x, int p){
-      if(p==0)return 1; if(p==1)return x;
-      long ans=pow(x,p/2);
-      return ((ans*ans)%M*pow(x,p%2))%M;
-    }
+    
     public static void merge(int a, int b) {
-    	if(rk[a]<rk[b]) {
-    		p[a]=b;
-    	}else if(rk[a]==rk[b]) {
-    		p[a]=b; rk[b]++;
-    	}else {
-    		p[b]=a;
-    	}
+        if(rk[a]<rk[b]) {
+            p[a]=b; siz[b]+=siz[a];
+        }else if(rk[a]==rk[b]) {
+            p[a]=b; rk[b]++;siz[b]+=siz[a];
+        }else {
+            p[b]=a; siz[a]+=siz[b];
+        }
     }
-    */
+    
 }
 //Debugging:
 //Are you sure your algorithm is correct?
