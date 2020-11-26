@@ -34,6 +34,18 @@ public class A{
   
         
     } 
+    public static class Pair implements Comparable<Pair>{
+        int vtx; int val;
+        public Pair(int a, int b){
+            this.vtx=a; this.val=b;
+        }
+        public int compareTo(Pair other){
+            if(this.val<other.val)return -1;
+            if(this.val>other.val)return 1;
+            if(this.vtx<other.vtx)return -1;
+            return 1;
+        }
+    }
     static int MOD=998244353;
     static int[] rk, p,siz;
     public static void main(String[] args){
