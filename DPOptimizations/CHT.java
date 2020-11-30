@@ -60,6 +60,8 @@ public class CF0319C{
         //Intersection of l1 and l3 must be ABOVE l2
         //For l2 to be added
         //l1.m>l2.m>l3.m, as sum is strictly increasing
+      
+        //If below, use <
     }
     public static void add(long m, long b){
         M.add(m); B.add(b);
@@ -72,7 +74,7 @@ public class CF0319C{
         if(pointer>=M.size()){pointer=M.size()-1;}
         while(pointer<M.size()-1 && 
                 M.get(pointer+1)*x+B.get(pointer+1) < M.get(pointer)*x+B.get(pointer)){
-            pointer++;
+            pointer++; //If max, use >
         }
         return M.get(pointer)*x+B.get(pointer);
     }
