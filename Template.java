@@ -70,7 +70,10 @@ public class A{
             p[b]=a; siz[a]+=siz[b];
         }
     }
-    
+    public static long pow(int b, int e){
+        if(e==0)return 1; if(e==1)return b;
+        long x=pow(b,e/2); x*=x; x%=MOD; x*=pow(b,e%2); return x%MOD;
+    }
 }
 //Debugging:
 //Are you sure your algorithm is correct?
