@@ -74,6 +74,15 @@ public class A{
         if(e==0)return 1; if(e==1)return b;
         long x=pow(b,e/2); x*=x; x%=MOD; x*=pow(b,e%2); return x%MOD;
     }
+  public static void dfs(ArrayList<Integer>[] arl, int cur){
+       
+        for (int i : arl[cur]) {
+            
+            
+            
+        }
+        
+    }
 }
 //Debugging:
 //Are you sure your algorithm is correct?
